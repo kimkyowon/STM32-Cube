@@ -1,6 +1,6 @@
 # STM32의 예제 실습
 
-### led on/off
+### 1.blinky
 
 '''c
 while(1){
