@@ -1,6 +1,6 @@
 # STM32의 예제 실습
 
-### 1.blinky
+### 1) blinky
 
 '''c
 while(1){
