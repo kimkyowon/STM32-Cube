@@ -13,7 +13,7 @@ while(1){
 }
 ```
 
-### 1) blinky GPIO output control with ODR register
+### 2) blinky GPIO output control with ODR register
 ```c
 while(1){
   GPIO ->ODR = 0xf000 // 1111 0000 0000 0000 (led 4개가 켜짐)
