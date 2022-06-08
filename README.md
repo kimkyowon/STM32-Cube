@@ -17,7 +17,6 @@ while(1){
 
 ### 2) blinky GPIO output control with ODR register
 ```c
-HAL_TIM_Base_Start(&htim14);
 while(1){
   GPIO ->ODR = 0xf000 // 1111 0000 0000 0000 (led 4개가 켜짐)
   HAL_Delay(1000);
@@ -58,6 +57,8 @@ TIM_HandleTypeDef htim14
 1. Poling 방식
 
 ```c
+HAL_TIM_Base_Start(&htim14);
+
 while(1){
   if(__HAL_TIM_GET_FLAG(&htim14, TIM_FLAG_UPDATE)){ //현재 update가 되었는지 확인
     __HAL_TIM_CLEAR_IT(&htim14, TIM_IT_UPDATE); //Clear해주고
