@@ -17,6 +17,7 @@ while(1){
 
 ### 2) blinky GPIO output control with ODR register
 ```c
+HAL_TIM_Base_Start(&htim14);
 while(1){
   GPIO ->ODR = 0xf000 // 1111 0000 0000 0000 (led 4개가 켜짐)
   HAL_Delay(1000);
